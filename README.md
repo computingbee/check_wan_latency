@@ -46,14 +46,14 @@ CRITICAL: 170.6ms from Hong-Kong more than 165.0ms for ip address 4.2.2.2
 #### Software  Requirements
 ```sh
 It was tested on Python 2.7.6 and should work on 2.7.x. Following python modules are required: pycurl, 
-StringIO, IPy
+StringIO, IPy, argparse
 ```
 
 #### Usage
 ```sh
 Before scheduling the check for an IP address, run the command without -w and -c to see min and max
 returned for the latency from a location. In the Examples section above, we run the command from 
-Hong-Kong a few times and then set wanring and critical thresholds for our checks.
+Hong-Kong a few times and then set warning and critical thresholds for our checks.
 
 Please see icinga2example.conf for setting this up on Icinga2. That's where I tested it but should work just
 fine with Nagios and other forks.
